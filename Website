@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freelancer Hub</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #060606;
+      color: white;
+    }
+
+    header {
+      background: #070707;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1{
+      font-size: 36px;
+      font-style:normal;
+      margin:0;
+      color:white;
+    }
+    nav {
+      display: flex;
+      justify-content:center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    nav a button {
+      background-color: #e9eef2;
+      color: rgb(6, 5, 5);
+      border: none;
+      padding: 10px 40px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+     .sub:hover{
+      background-color:dimgray;
+     }
+    .hero {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 80vh; /* Increased height */
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align:center;
+    }
+
+    .hero-content h1 {
+      font-size: 5rem;
+      color: white;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* For better readability */
+    }
+
+    .hero-content form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content input[type="text"] {
+      padding: 10px;
+      width: 400px;
+      border: none;
+      position:initial;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .hero-content button {
+
+      border: none;
+      background-color:whitesmoke;
+      color: rgb(9, 9, 9);
+      cursor: pointer;
+      font-size: 20px;
+         background-size: contain;
+    }
+
+    .projects {
+      max-width: 1000px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      color: black;
+    }
+
+    .project-card {
+      background: rgb(248, 244, 244);
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .project-card button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Freelancer Hub</h1>
+    <nav>
+      <a href="#"><button class="sub"> Home</button></a>
+      <a href="#"><button class="sub">Projects</button></a>
+      <a href="#"><button class="sub">Login</button></a>
+      <a href="#"><button class="sub">Signup</button></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="image-container">
+      <img src="C:\Users\pavan kumar\OneDrive\Documents\robot.jpg" alt="Robot Working">
+      <div class="hero-content">
+        <h1>Connecting clients in need to freelancers who deliver</h1>
+        <form action="/action_page.php">
+          <input type="text" placeholder="Type something..." name="search2">
+          <button type="submit">🔍Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="project-card">
+      <h3>Website Design</h3>
+      <p>Looking for an expert frontend developer to redesign our company website.</p>
+      <button>View Project</button>
+    </div>
+    <div class="project-card">
+      <h3>Mobile App Development</h3>
+      <p>Build a cross-platform mobile app for our e-commerce platform.</p>
+      <button>View Project</button>
+    </div>
+    <div class="project-card">
+      <h3>Video Editing</h3>
+      <p>Looking for a creative editor to produce engaging and professional videos for our media campaigns</p>
+      <button>View Project</button>
+    </div>
+    <div class="project-card">
+      <h3>Software Developer</h3>
+      <p>Design and Develop a responsive and user-friendly website.</p>
+      <button>View Project</button>
+    </div>
+    <div class="project-card">
+      <h3>Architecture & Interior Design</h3>
+      <p>Seekin professionals to create modern,functional,and aesthetic design for our new office space</p>
+      <button>View Project</button>
+      </div>
+      <div class="project-card">
+      <h3>Search Engine Optimisation</h3>
+      <p>Looking for an Expert to improve our website's  Google rankings</p>
+      <button>View Project</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Freelancer Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>
